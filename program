@@ -1,0 +1,35 @@
+import java.util.*;
+public class Main{
+
+     public static void main(String []args){
+    
+    int n;
+    String value,value1,value2,new_value;
+    Scanner sc=new Scanner(System.in);
+    value=sc.nextLine();
+    n=value.length();
+   value1=value.substring(0,n/2);
+   value2=value.substring(n/2,n);
+   new_value=value2+value1;
+   char[] ch=new_value.toCharArray();
+    int i, j;
+for (i=0; i<n; i++)   
+{  
+for (j=n-i; j>=0; j--)         
+{  
+System.out.print(" ");   
+}   
+for (j=0; j<=i; j++ )   
+{   
+System.out.print(ch[j]);   
+}   
+System.out.println();   
+}   
+
+
+   
+    
+    
+    
+     }
+}
